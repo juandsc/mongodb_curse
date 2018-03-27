@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mongodb Curse</title>
+  </head>
+  <body>
+    <h1>Welcome {{ name }}</h1>
+    %for thing in things:
+      <ul>
+        <li>{{ thing }}</li>
+      </ul>
+    %end
+    <br>
+    <form action="favorite_pet" method="post">
+      What is your favorite fruit:
+      <input type="text" name="pet" value="" size="40"><br>
+      <input type="submit" value="submit">
+    </form>
+  </body>
+</html>
